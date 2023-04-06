@@ -1,0 +1,68 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "fullName": "Jimbo Jenkins",
+        "email": "employee@1.com",
+        "isStaff": true
+      },
+      {
+        "id": 2,
+        "fullName": "Joel Dick",
+        "email": "customer@1.com",
+        "isStaff": false
+      }
+    ],
+
+    "customers": [
+      {
+        "id": 1,
+        "LoyaltyNumber": 1,
+        "userId": 2
+      }
+    ],
+
+    "employees": [
+      {
+        "id": 1,
+        "startDate": "2020-02-02",
+        "payRate": 11.00,
+        "userId": 1,
+        "locationId": 1
+      }
+    ],
+
+    "locations": [
+      {
+        "id": 1,
+        "address": "300 Main Street",
+        "sqFeet": 1000
+      }
+    ],
+
+    "purchases": [
+      {
+        "id": 1,
+        "customerId": 2,
+        "productId": 1,
+        "quantity": 1
+      }
+    ],
+
+    "products": [
+      {
+        "id": 1,
+        "name": "iPhone 11",
+        "price": 299,
+        "typeId": 1
+      }
+    ],
+
+    "productTypes": [
+      {
+        "id": 1,
+        "name": "cellphones"
+      }
+    ]
+  }
+  
