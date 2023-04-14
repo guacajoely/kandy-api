@@ -1,68 +1,231 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "fullName": "Jimbo Jenkins",
-        "email": "employee@1.com",
-        "isStaff": true
-      },
-      {
-        "id": 2,
-        "fullName": "Joel Dick",
-        "email": "customer@1.com",
-        "isStaff": false
-      }
-    ],
-
-    "customers": [
-      {
-        "id": 1,
-        "LoyaltyNumber": 1,
-        "userId": 2
-      }
-    ],
-
-    "employees": [
-      {
-        "id": 1,
-        "startDate": "2020-02-02",
-        "payRate": 11.00,
-        "userId": 1,
-        "locationId": 1
-      }
-    ],
-
-    "locations": [
-      {
-        "id": 1,
-        "address": "300 Main Street",
-        "sqFeet": 1000
-      }
-    ],
-
-    "purchases": [
-      {
-        "id": 1,
-        "customerId": 2,
-        "productId": 1,
-        "quantity": 1
-      }
-    ],
-
-    "products": [
-      {
-        "id": 1,
-        "name": "iPhone 11",
-        "price": 299,
-        "typeId": 1
-      }
-    ],
-
-    "productTypes": [
-      {
-        "id": 1,
-        "name": "cellphones"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Jimbo Jenkins",
+      "email": "employee@1.com",
+      "isStaff": true
+    },
+    {
+      "id": 2,
+      "fullName": "Joel Dick",
+      "email": "customer@1.com",
+      "isStaff": false
+    },
+    {
+      "fullName": "Joel",
+      "email": "guacajoely@gmail.com",
+      "isStaff": true,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "fullName": "Jarod",
+      "email": "jarod@hotmail.com",
+      "isStaff": true
+    },
+    {
+      "id": 5,
+      "fullName": "George Washington",
+      "email": "bigbenny420@yahoo.com",
+      "isStaff": true
+    },
+    {
+      "id": 6,
+      "fullName": "George",
+      "email": "george@yahoo.com",
+      "isStaff": true
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "userId": 2,
+      "loyaltyNumber": 3
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "startDate": "2020-02-02",
+      "payRate": 11,
+      "userId": 1,
+      "locationId": 1
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "address": "300 Main Street",
+      "sqFeet": 1000
+    },
+    {
+      "id": 2,
+      "address": "2020 20th Street",
+      "sqFeet": 2000
+    },
+    {
+      "id": 3,
+      "address": "444 4th Avenue",
+      "sqFeet": 400
+    }
+  ],
+  "productLocations": [
+    {
+      "id": 1,
+      "productId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "locationId": 1
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "locationId": 1
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "locationId": 1
+    },
+    {
+      "id": 5,
+      "productId": 5,
+      "locationId": 1
+    },
+    {
+      "id": 6,
+      "productId": 6,
+      "locationId": 1
+    },
+    {
+      "id": 7,
+      "productId": 7,
+      "locationId": 1
+    },
+    {
+      "id": 8,
+      "productId": 1,
+      "locationId": 2
+    },
+    {
+      "id": 9,
+      "productId": 2,
+      "locationId": 2
+    },
+    {
+      "id": 10,
+      "productId": 3,
+      "locationId": 2
+    },
+    {
+      "id": 11,
+      "productId": 4,
+      "locationId": 2
+    },
+    {
+      "id": 12,
+      "productId": 5,
+      "locationId": 2
+    },
+    {
+      "id": 13,
+      "productId": 6,
+      "locationId": 2
+    },
+    {
+      "id": 14,
+      "productId": 7,
+      "locationId": 2
+    }
+  ],
+  "purchases": [
+    {
+      "customerId": 1,
+      "productId": 1,
+      "quantity": 1,
+      "id": 1
+    },
+    {
+      "customerId": 1,
+      "productId": 4,
+      "quantity": 1,
+      "id": 2
+    },
+    {
+      "customerId": 1,
+      "productId": 7,
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "customerId": 1,
+      "productId": 8,
+      "quantity": 1,
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Cola",
+      "price": 2,
+      "productTypeId": 1
+    },
+    {
+      "id": 2,
+      "name": "Lemon-Lime",
+      "price": 2,
+      "productTypeId": 1
+    },
+    {
+      "id": 3,
+      "name": "Root Beer",
+      "price": 2,
+      "productTypeId": 1
+    },
+    {
+      "id": 4,
+      "name": "Lemon Drops",
+      "price": 3,
+      "productTypeId": 2
+    },
+    {
+      "id": 5,
+      "name": "Jolly Ranchers",
+      "price": 4,
+      "productTypeId": 2
+    },
+    {
+      "id": 6,
+      "name": "Life Savers",
+      "price": 4,
+      "productTypeId": 2
+    },
+    {
+      "id": 7,
+      "name": "Jawbreakers",
+      "price": 4,
+      "productTypeId": 2
+    },
+    {
+      "name": "A New Candy",
+      "price": 9.99,
+      "productTypeId": "2",
+      "id": 8
+    }
+  ],
+  "productTypes": [
+    {
+      "id": 1,
+      "name": "soda"
+    },
+    {
+      "id": 2,
+      "name": "hard candy"
+    }
+  ]
+}
