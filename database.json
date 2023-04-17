@@ -28,12 +28,18 @@
       "id": 5,
       "fullName": "George Washington",
       "email": "bigbenny420@yahoo.com",
-      "isStaff": true
+      "isStaff": false
     },
     {
       "id": 6,
       "fullName": "George",
       "email": "george@yahoo.com",
+      "isStaff": false
+    },
+    {
+      "id": 7,
+      "fullName": "Jarod Jinkonz",
+      "email": "JongoJankins@django.com",
       "isStaff": true
     }
   ],
@@ -42,6 +48,16 @@
       "id": 1,
       "userId": 2,
       "loyaltyNumber": 3
+    },
+    {
+      "id": 2,
+      "userId": 5,
+      "loyaltyNumber": 7
+    },
+    {
+      "id": 3,
+      "userId": 6,
+      "loyaltyNumber": 13
     }
   ],
   "employees": [
@@ -51,6 +67,13 @@
       "payRate": 11,
       "userId": 1,
       "locationId": 1
+    },
+    {
+      "userId": 7,
+      "payRate": "7.25",
+      "locationId": "3",
+      "startDate": "2023-04-20",
+      "id": 2
     }
   ],
   "locations": [
@@ -150,22 +173,16 @@
       "id": 1
     },
     {
-      "customerId": 1,
-      "productId": 4,
-      "quantity": 1,
-      "id": 2
-    },
-    {
-      "customerId": 1,
+      "customerId": 2,
       "productId": 7,
       "quantity": 1,
-      "id": 3
+      "id": 6
     },
     {
-      "customerId": 1,
-      "productId": 8,
+      "customerId": 2,
+      "productId": 3,
       "quantity": 1,
-      "id": 4
+      "id": 7
     }
   ],
   "products": [
@@ -216,6 +233,12 @@
       "price": 9.99,
       "productTypeId": "2",
       "id": 8
+    },
+    {
+      "name": "Some New Thing",
+      "price": 4.2,
+      "productTypeId": "2",
+      "id": 9
     }
   ],
   "productTypes": [
